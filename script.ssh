@@ -1,2 +1,15 @@
 #!/bin/bash
-echo "hello word"
+h=$date +"%H")
+echo "current hour : $h"
+if [ $h -ge 0 -a $h -lt 5 ] 
+then
+   echo "Good Night"
+elif [ $h -ge 5 -a $h -lt 12 ]
+then
+   echo "Good Morning"
+elif [ $h -ge 12 -a $h -lt 17 ]
+then
+   echo "Good Day"
+else
+   echo "Good Evening" 
+fi
